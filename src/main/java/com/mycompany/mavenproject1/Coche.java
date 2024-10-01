@@ -11,8 +11,9 @@ package com.mycompany.mavenproject1;
 public class Coche extends VehiculoBase{
     private Tipodecombustible combustible;
 
-    public Coche(String marca, String modelo, int VelocidadActual, Tipodecombustible Combustible) {
-        super(marca, modelo, VelocidadActual, Combustible);
+    public Coche(String marca, String modelo, int VelocidadActual, Tipodecombustible combustible) {
+        super(marca, modelo, VelocidadActual, combustible);
+        this.combustible = combustible;
     }
 
     @Override

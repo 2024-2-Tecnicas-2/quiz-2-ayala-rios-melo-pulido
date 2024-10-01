@@ -8,7 +8,7 @@ package com.mycompany.mavenproject1;
  *
  * @author USUARIO
  */
-public class VehiculoBase implements Vehiculo{
+public class VehiculoBase implements IVehiculo{
     private String marca;
     private String modelo;
     private int VelocidadActual;

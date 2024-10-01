@@ -11,16 +11,11 @@ package com.mycompany.mavenproject1;
 public class Lancha extends VehiculoBase {
     private Tipodecombustible combustible;
 
-    public Lancha(String marca, String modelo, int VelocidadActual, Tipodecombustible Combustible) {
-        super(marca, modelo, VelocidadActual, Combustible);
+    public Lancha(String marca, String modelo, int VelocidadActual, Tipodecombustible combustible) {
+        super(marca, modelo, VelocidadActual, combustible);
+       this.combustible = combustible;
     }
 
-    @Override
-    public String toString() {
-        return super.toString()+"Lancha{" + "combustible=" + combustible + '}';
-    }
-
-  
     public Tipodecombustible getCombustible() {
         return combustible;
     }
